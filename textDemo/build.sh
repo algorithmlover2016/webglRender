@@ -5,7 +5,7 @@ npm install -g typescript
 
 
 # to create package.json
-npm init
+npm init -y
 
 # to create tsconfig.json
 tsc --init
@@ -16,5 +16,5 @@ npm run build
 # to run project
 npm run dev
 
-# to install webpack
-sudo npm install --save-dev webpack webpack-cli ts-loader
+# to install webpack and add webpack into package.json
+sudo npm install --save-dev -g -D webpack webpack-cli webpack-dev-server typescript ts-loader clean-webpack-plugin html-webpack-plugin

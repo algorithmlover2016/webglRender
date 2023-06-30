@@ -2,10 +2,13 @@
   "name": "textdemo",
   "version": "1.0.0",
   "description": "",
-  "main": "build/func.js",
+  "main": "src/func.ts",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "buildTsc": "tsc -p tsconfig.json",
+    "build": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
+    "develop": "webpack-dev-server --mode development --open"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +16,7 @@
     "ts-loader": "^9.4.4",
     "typescript": "^4.4.4",
     "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
