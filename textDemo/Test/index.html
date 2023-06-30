@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <head>
+        <title>Test</title>
+    </head>
+
+    <body>
+        <div id = "bg"></div>
+
+        <div>
+            <h2>"please input a line</h2><br />
+            <textarea id="in1"> </textarea>
+        </div>
+
+        <div id = "btns">
+            <button id="btn" onclick="revbtn()">Revert</button>
+            <button id="clr" onclick="clrbtn()">Clear</button>
+        </div>
+
+        <div>
+            <h2>Result</h2><br />
+            <textarea id="ou1"> </textarea>
+        </div>
+        <!-- The following line must be put after the declare of the upper funcs-->
+        <script src="../build/func.js"></script>
+    </body>
+</html>
+
