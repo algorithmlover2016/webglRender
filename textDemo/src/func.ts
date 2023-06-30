@@ -22,3 +22,11 @@ export function clrbtn(): void {
 //  (window as any).revbtn = revbtn; // similar to globalThis.revbtn = revbtn;
 //  (window as any).clrbtn = clrbtn; // similar to globalThis.clrbtn = clrbtn;
 // unless you set webpack.config.js to expose the function to library:"yourlibName",  libraryTarget: "var"
+
+
+// If you don't assign the function to window, you can still use it in the html file
+// But you need to add export keyword at each function and add library and libraryTarget in webpack.config.js
+// And you need to notice the function refer in the html file, it should be refered with library name if the libraryTarget is not "umd"
+
+// If you assign these functions to window or globalThis, you don't need to add export keyword at each function and
+// no need to add library and libraryTarget in webpack.config.js
