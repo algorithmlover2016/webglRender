@@ -18,8 +18,7 @@ module.exports = {
   output: {
     filename: 'func.js',
     path: path.resolve(__dirname, 'build'),
-    library: 'myFunc',
-    libraryTarget: 'var', // default
+    libraryTarget: 'umd',
 
   },
   devServer: {
