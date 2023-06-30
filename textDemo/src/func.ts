@@ -1,8 +1,8 @@
-function reverse(s: string): string {
+export function reverse(s: string): string {
     return s.split("").reverse().join("");
 }
 
-function revbtn(): void {
+export function revbtn(): void {
 
     const in1: HTMLInputElement = document.getElementById("in1") as HTMLInputElement;
     const ou1: HTMLDivElement = document.getElementById("ou1") as HTMLDivElement;
@@ -10,7 +10,7 @@ function revbtn(): void {
     ou1.innerText = reverse(s);
 }
 
-function clrbtn(): void {
+export function clrbtn(): void {
     const in1: HTMLInputElement = document.getElementById("in1") as HTMLInputElement;
     const ou1: HTMLDivElement = document.getElementById("ou1") as HTMLDivElement;
     in1.value = "";
@@ -18,5 +18,7 @@ function clrbtn(): void {
     ou1.innerText = "";
 }
 
-(window as any).revbtn = revbtn; // similar to globalThis.revbtn = revbtn;
-(window as any).clrbtn = clrbtn; // similar to globalThis.clrbtn = clrbtn;
+// if there is no export, the function is not visible outside this file
+//  (window as any).revbtn = revbtn; // similar to globalThis.revbtn = revbtn;
+//  (window as any).clrbtn = clrbtn; // similar to globalThis.clrbtn = clrbtn;
+// unless you set webpack.config.js to expose the function to library:"yourlibName",  libraryTarget: "var"
