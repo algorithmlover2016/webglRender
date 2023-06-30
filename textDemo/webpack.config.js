@@ -2,7 +2,7 @@ const path = require('path');
 module.exports = {
   mode: 'development', // or 'production'
   entry: './src/func.ts',
-  // devtool: 'inline-source-map',
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
