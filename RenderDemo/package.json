@@ -1,0 +1,40 @@
+{
+  "type":"module",
+
+  "scripts": {
+    "dev": "npx babel-node TestDemo/app.js",
+    "dev:newest": "webpack& npx babel-node TestDemo/app.js",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@babel/core": "7.12.10",
+    "@koa/cors": "3.1.0",
+    "axios": "1.4.0",
+    "babel-loader": "8.2.2",
+    "babel-node": "0.0.1-security",
+    "babel-plugin-add-module-exports": "1.0.4",
+    "date-fns": "2.28.0",
+    "griffith": "1.10.0",
+    "jquery": "3.5.1",
+    "koa": "2.13.0",
+    "koa-range": "0.3.0",
+    "koa-static": "5.0.0",
+    "npx": "10.2.2",
+    "three": "0.120.1",
+    "uuid": "8.3.2",
+    "xgplayer": "2.14.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.10",
+    "@babel/preset-env": "7.12.10",
+    "@babel/register": "7.12.10",
+    "@types/node": "17.0.41",
+    "@types/resize-observer-browser": "0.1.5",
+    "@types/uuid": "8.3.4",
+    "babel-cli": "6.26.0",
+    "ts-loader": "8.0.17",
+    "typescript": "4.1.5",
+    "webpack": "5.23.0",
+    "webpack-cli": "4.5.0"
+  }
+}
